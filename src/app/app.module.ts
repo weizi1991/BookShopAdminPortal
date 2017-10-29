@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatButtonModule, MatCheckboxModule, MatToolbarModule, MatGridListModule, MatInputModule, MatSlideToggleModule,MatSelectModule, MatDialogModule} from '@angular/material';
+import {MatButtonModule, MatCheckboxModule, MatToolbarModule, MatGridListModule, MatInputModule, MatSlideToggleModule,MatSelectModule, MatDialogModule,MatFormFieldModule} from '@angular/material';
 import {HttpModule} from '@angular/http';
 import {routing} from './app.routing';
 import 'hammerjs';
@@ -49,6 +49,7 @@ import { RemoveBookService } from './services/remove-book.service';
     MatSlideToggleModule,
     MatDialogModule,
     MatSelectModule,
+    MatFormFieldModule,
     HttpModule,
     routing
   ],
