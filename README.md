@@ -6,7 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 - Get the project from Github
 
--  ```https://github.com/weizi1991/BookStoreAdminPortal.git```
+-  ```https://github.com/weizi1991/BookShopAdminPortal.git```
 
 - Install the dependencies
 
