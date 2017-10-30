@@ -21,7 +21,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 -- Unit test should added in each component
 -- Improve mobile layout
+-- Add pagination or throttling scrolldown
 -- Create documentation
+-- Integrate with back-end
 
 ## License
 
