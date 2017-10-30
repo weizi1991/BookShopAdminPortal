@@ -4,6 +4,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule, MatCheckboxModule, MatToolbarModule, MatGridListModule, MatInputModule, MatSlideToggleModule,MatSelectModule, MatDialogModule,MatFormFieldModule} from '@angular/material';
 import {HttpModule} from '@angular/http';
 import {routing} from './app.routing';
+import { RouterModule } from '@angular/router';
 import 'hammerjs';
 import { FormsModule } from '@angular/forms';
 
@@ -37,6 +38,7 @@ import { RemoveBookService } from './services/remove-book.service';
     EditBookComponent,
     DialogResultExampleDialog
   ],
+  entryComponents: [DialogResultExampleDialog],
   imports: [ //3rd party
     BrowserModule,
     BrowserAnimationsModule,
@@ -51,7 +53,8 @@ import { RemoveBookService } from './services/remove-book.service';
     MatSelectModule,
     MatFormFieldModule,
     HttpModule,
-    routing
+    routing,
+    RouterModule
   ],
   providers: [ //services
     LoginService,
@@ -63,6 +66,6 @@ import { RemoveBookService } from './services/remove-book.service';
     EditBookService,
     RemoveBookService
   ],
-  bootstrap: [AppComponent, DialogResultExampleDialog]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -14,15 +14,18 @@ const appRoutes: Routes = [
   },
   {
     path: 'login',
-    component: LoginComponent
+    component: LoginComponent,
+    pathMatch: 'full'
   },
   {
     path: 'addNewBook',
-    component: AddNewBookComponent
+    component: AddNewBookComponent,
+    pathMatch: 'full'
   },
   {
     path: 'bookList',
-    component: BookListComponent
+    component: BookListComponent,
+    pathMatch: 'full'
   },
   {
     path: 'viewBook/:id',

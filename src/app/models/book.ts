@@ -8,7 +8,7 @@ export class Book {
   public category: string;
   public numberofPages: number;
   public format: string;
-  public isbs: string;
+  public isbn: string;
   public shippingWeight: number;
   public listPrice: number;
   public ourPrice: number;

@@ -78,11 +78,12 @@ export class BookListComponent implements OnInit {
           for(let book of this.removeBookList){
             this.removeBookService.sendBook(book.id).subscribe(
               res => {
-                this.getBookList();
+                //this.getBookList();
               },
               err => {
               }
             );
+            location.reload();
           }
 
         }
@@ -112,5 +113,6 @@ export class BookListComponent implements OnInit {
   templateUrl: './dialog-result-example-dialog.html',
 })
 export class DialogResultExampleDialog{
-  constructor(public dialogRef:  MatDialogRef<DialogResultExampleDialog>){ }
+  constructor(public dialogRef:  MatDialogRef<DialogResultExampleDialog>,
+    @Inject(MAT_DIALOG_DATA) public data: any){ }
 }
