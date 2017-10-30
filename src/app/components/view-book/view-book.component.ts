@@ -28,7 +28,10 @@ export class ViewBookComponent implements OnInit {
 
     this.getBookService.getBook(this.bookId).subscribe(
       res => {
-        this.book = res.json();
+        let temp = res.json().filter(book =>
+          {return (book["id"] === this.bookId)}
+        );
+        this.book = temp[0]
       },
       error => {
         console.log(error)

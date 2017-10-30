@@ -78,12 +78,12 @@ export class BookListComponent implements OnInit {
           for(let book of this.removeBookList){
             this.removeBookService.sendBook(book.id).subscribe(
               res => {
-                //this.getBookList();
+                this.getBookList();
               },
               err => {
               }
             );
-            location.reload();
+            //location.reload();
           }
 
         }

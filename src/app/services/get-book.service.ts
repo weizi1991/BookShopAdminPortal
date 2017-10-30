@@ -7,11 +7,12 @@ export class GetBookService {
   constructor(private http: Http) { }
 
   getBook(id: number){
-    let url = `http://localhost:8181/book/${id}`;
-    let headers = new Headers({
-      'Content-Type': 'application/json',
-      'x-auth-token': localStorage.getItem('xAuthToken')
-    });
-    return this.http.get(url, {headers: headers});
+    // let url = `http://localhost:8181/book/${id}`;
+    // let headers = new Headers({
+    //   'Content-Type': 'application/json',
+    //   'x-auth-token': localStorage.getItem('xAuthToken')
+    // });
+    // return this.http.get(url, {headers: headers});
+    return this.http.get('assets/MOCK_DATA.json');
   }
 }
